@@ -1,69 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Portfolio</title>
+    <title>Kiran Bhliya - Professional Photographer & Videographer</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home" class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Hi, I'm [Your Name], a passionate web developer.</p>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-text" data-aos="fade-up">
+            <h1>Hi, I'm Kiran Bhliya</h1>
+            <p>A Professional Photographer & Videographer</p>
+            <p>Specializing in Wedding Photography & Videography</p>
+        </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>I am a web developer with experience in building responsive websites using HTML, CSS, and JavaScript.</p>
+        <h2 data-aos="fade-up">About Me</h2>
+        <p data-aos="fade-up">I am Kiran Bhliya, a passionate photographer and videographer with more than 25 satisfied clients. I specialize in capturing beautiful moments during weddings and making them last forever. I bring creativity and passion to every shot, ensuring that each frame tells a unique story.</p>
     </section>
 
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="project-cards">
-            <div class="card">
-                <h3>Project 1</h3>
-                <p>Description of project 1.</p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2 data-aos="fade-up">My Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-aos="zoom-in">
+                <img src="image1.jpg" alt="Wedding Photo 1">
             </div>
-            <div class="card">
-                <h3>Project 2</h3>
-                <p>Description of project 2.</p>
+            <div class="portfolio-item" data-aos="zoom-in">
+                <img src="image2.jpg" alt="Wedding Photo 2">
             </div>
-            <div class="card">
-                <h3>Project 3</h3>
-                <p>Description of project 3.</p>
+            <div class="portfolio-item" data-aos="zoom-in">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="portfolio-item" data-aos="zoom-in">
+                <img src="image3.jpg" alt="Wedding Photo 3">
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form id="contactForm">
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="Your Email" required>
-            <textarea id="message" placeholder="Your Message" required></textarea>
+        <h2 data-aos="fade-up">Contact Me</h2>
+        <form id="contactForm" data-aos="fade-up">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
 
     <footer>
-        <p>© 2025 [Your Name]. All rights reserved.</p>
+        <p>© 2025 Kiran Bhliya. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        AOS.init();  // Initialize AOS library
+    </script>
 </body>
-
 </html>
